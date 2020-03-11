@@ -2,14 +2,14 @@ CC=g++
 
 all: test
 
-test: main.o  
-    $(CC) -o test main.o 
+test: main.o allocator.o
+	$(CC) -o test main.o allocator.o
 
 main.o: main.cpp allocator.h
-    $(CC) -c main.cpp
+	$(CC) -c main.cpp
 
 allocator.o: allocator.cpp allocator.h
-    $(CC) -c square.cpp
+	$(CC) -c allocator.cpp
 
 clean:
-    rm -rf *.o test
+	rm -rf *.o test

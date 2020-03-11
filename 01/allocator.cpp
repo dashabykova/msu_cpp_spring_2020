@@ -1,5 +1,5 @@
 #include <iostream>
-#include 'allocator.h'
+#include "allocator.h"
 using namespace std;
 
 static size_t size;
@@ -32,7 +32,7 @@ char* alloc(size_t size_request)
 
 void reset()
 {
-	size = 0
+	size = 0;
 
 }
 
