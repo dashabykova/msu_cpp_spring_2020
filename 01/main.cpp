@@ -18,6 +18,9 @@ int main() {
 	makeAllocator(2);
 	char* ptr5 = alloc(1);
 	assert(ptr5 != nullptr);
+	makeAllocator(-1);
+	char* ptr6 = alloc(1);
+	assert(ptr6 == nullptr);
 	delete_allocator();
 	return 0;
 }
