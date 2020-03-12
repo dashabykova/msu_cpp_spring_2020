@@ -11,6 +11,11 @@ void makeAllocator(size_t max_size) {
 	maxsize = max_size;
 	start = (char*)malloc(max_size);
 	size = 0;
+	if (start == nullptr) {
+
+		cout << "I can't allocate memory";
+
+	}
 
 }
 
